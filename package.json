@@ -1,0 +1,23 @@
+{
+  "name": "sex-appeal-1b",
+  "version": "1.0.0",
+  "description": "Interactive music",
+  "main": "client.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Sex",
+    "Appeal",
+    "song"
+  ],
+  "author": "Implicit Bias",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
