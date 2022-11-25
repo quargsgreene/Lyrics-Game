@@ -4,8 +4,8 @@ let sound;
 let image;
 
 function preload(){
-  sound = loadSound('/sound/sex-appeal.mp3');
-  image = loadImage('/images/background-image.png');
+  sound = loadSound('sex-appeal.mp3');
+  image = loadImage('background-image.png');
 }
 
 function setup() {
@@ -22,11 +22,11 @@ function setup() {
   let guess_button = createButton('checK');
   guess_button.position(guess.x+width/2,guess.y);
   guess_button.mousePressed(checkMessage);
-  
+
   let hint_button = createButton('Play hint...');
   hint_button.position(3*width/4,3*height/4);
   hint_button.mousePressed(playSound);
-  
+
  let check_message = createP('');
   function checkMessage (){
   check_message.position(guess.x,guess.y+height/10);
@@ -34,9 +34,9 @@ function setup() {
     check_message.html('Yes!');
     }else{
       check_message.html('No! I also bet that you\'ve never had neon purple belly button lint.');
-    }  
+    }
   }
-  
+
   function playSound (){
   if(!sound.isPlaying()){
     sound.play();
@@ -61,17 +61,17 @@ function draw() {
   background(image);
 
   //text hint 2
- 
+
   let colorTextTo = color(255, 247, 0);
   let colorTextFrom = color(97, 255, 139);
   let colorBetweenText= lerpColor(colorTextTo,colorTextFrom,sin(millis()/2000));
   let colorBall = color(28, 126, 255);
-  
+
   let letters = ['c','o','l','o','s','s','a','l'];
-  
+
   push();
   let lettersLength = letters.length;
-  for(let i=0;i<lettersLength;i++){ 
+  for(let i=0;i<lettersLength;i++){
     fill(colorBetweenText);
     textFont('Helvetica');
     textSize(random(12,14));
@@ -80,14 +80,14 @@ function draw() {
   pop();
 
   push();
-  
-  fill(colorBall);
-  ellipse(random(width/2),random(height/2),10,10); 
-  pop();
-  
-    } 
 
-function windowResized (){  
+  fill(colorBall);
+  ellipse(random(width/2),random(height/2),10,10);
+  pop();
+
+    }
+
+function windowResized (){
   resizeCanvas(windowWidth,windowHeight);
 }
 
