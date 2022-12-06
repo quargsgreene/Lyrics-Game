@@ -11,22 +11,27 @@ function setup() {
   // game buttons, instructions, inputs, audio hint
   const introMsg = createP('Try and guess one word that I say.\n It’s great to sing karaoke alone in my living room, except for when I can hear my neighbor’s rock music. He also won’t clean up all the dove shit.');
   introMsg.position(width / 4, height / 2);
+  introMsg.id('sentence');
 
   const guess = createInput('');
   guess.position(width / 12, height / 12);
+  guess.id('input');
 
   const guessButton = createButton('checK');
   guessButton.position(guess.x + width / 2, guess.y);
   guessButton.mousePressed(checkMessage);
+  guessButton.id('guess');
 
   const hintButton = createButton('Play hint...');
-  hintButton.position(3 * width / 4, 3 * height / 4);
+  hintButton.position((3 * width) / 4, (3 * height) / 4);
   hintButton.mousePressed(playSound);
+  hintButton.id('hint');
 
   const checkMessageFeedback = createP('');
+  checkMessageFeedback.id('feedback');
   function checkMessage() {
     checkMessageFeedback.position(guess.x, guess.y + height / 10);
-    if (/colossal/i.test(guess.value()) == true) {
+    if (/colossal/i.test(guess.value()) === true) {
       checkMessageFeedback.html('Yes!');
     } else {
       checkMessageFeedback.html('No! I also bet that you\'ve never had neon purple belly button lint.');
