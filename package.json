@@ -1,18 +1,17 @@
 {
-  "name": "sex-appeal-1b",
+  "name": "lyrics-game",
   "version": "1.0.0",
   "description": "Interactive music",
   "main": "client.js",
   "scripts": {
-    "test": "jest",
-    "start": "node app.js"
+    "test": "nyc npx cypress run"
   },
   "keywords": [
     "Sex",
     "Appeal",
     "song"
   ],
-  "author": "Implicit Bias",
+  "author": "Quargs Greene",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3"
