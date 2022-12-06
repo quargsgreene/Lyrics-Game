@@ -52,7 +52,7 @@ function setup() {
 
   // text hint 1
   const scrambledIntroMsg = createP('acsosoll');
-  scrambledIntroMsg.style('class', 'invisible');
+  scrambledIntroMsg.id('screen-reader');
   scrambledIntroMsg.position(width / 24, height / 24);
 }
 

@@ -1,0 +1,34 @@
+html, body {
+
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family:'Helvetica';
+  overflow: hidden;
+  opacity: 0.9;
+  background-color: #302c00;
+  }
+
+.invisible{
+  opacity:0;
+}
+
+p{
+  font-size: 2em;
+  position: relative;
+  top: 60%;
+  left: 0;
+  margin: 10px;
+                  }
+input, button{
+
+  color: #ffffff;
+  background-color: #000000;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+time{
+  color: #dddddd;
+}
