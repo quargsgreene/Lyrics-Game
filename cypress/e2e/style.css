@@ -9,10 +9,6 @@ html, body {
   background-color: #302c00;
   }
 
-.invisible{
-  opacity:0;
-}
-
 p{
   font-size: 2em;
   position: relative;

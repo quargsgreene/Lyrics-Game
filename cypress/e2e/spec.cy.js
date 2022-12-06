@@ -8,7 +8,7 @@ describe('Lyrics Game browser tests', () => {
   });
 
   it('displays the screen reader task', () => {
-    cy.get('#screen-reader').contains('acsosoll', { timeout: 10000 });
+    cy.get('#screen-reader').contains('acsosoll', { force: true, timeout: 10000 });
   });
 
   it('displays the correct message with an incorrect guess', () => {
