@@ -2,7 +2,7 @@ let sound;
 let image;
 
 function preload() {
-  sound = loadSound('Sex-Appeal.mp3');
+  sound = loadSound('sex-appeal.mp3');
   image = loadImage('backgroundImage.png');
 }
 
